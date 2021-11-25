@@ -33,7 +33,7 @@ namespace ConstructorSampe
         public float GetHeronsFormula()
         {
             float s = (SidesA + SidesB + SidesC) / 2;
-            return ((s- SidesA)*(s- SidesB)*(s- SidesC));
+            return (s*(s- SidesA)*(s- SidesB)*(s- SidesC));
         }
 
     }
