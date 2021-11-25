@@ -11,6 +11,11 @@ namespace ConstructorSampe
                  InteractiveInput.InputFloat("幅："),
                  InteractiveInput.InputFloat("高さ："));
             Console.WriteLine($"面積は{triangle.GetArea()}");
+            Triangle triangleedge = new Triangle(
+                 InteractiveInput.InputFloat("辺A："),
+                 InteractiveInput.InputFloat("辺B："),
+                 InteractiveInput.InputFloat("辺C："));
+            Console.WriteLine($"辺は{triangleedge.GetHeronsFormula()}");
         }
     }
 }
