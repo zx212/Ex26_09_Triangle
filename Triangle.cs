@@ -18,7 +18,7 @@ namespace ConstructorSampe
             this.Height = h;
         }
 
-        public TriangleEdge(float a,float b,float c)
+        public Triangle(float a,float b,float c)
         {
             this.SidesA = a;
             this.SidesB = b;
@@ -32,7 +32,8 @@ namespace ConstructorSampe
 
         public float GetHeronsFormula()
         {
-            return ((SidesA+SidesB+SidesC)/2) ;
+            float s = (SidesA + SidesB + SidesC) / 2;
+            return ((s- SidesA)*(s- SidesB)*(s- SidesC));
         }
 
     }
